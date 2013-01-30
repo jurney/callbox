@@ -1,0 +1,14 @@
+How to make this work:
+
+Sign up for google app engine, and make an app.
+Install Python 2.7 and the google app engine sdk.
+Install git.
+Do a git clone from my git branch, hosted at https://github.com/jurney.
+Modify app.yaml to have your app name.
+Modify home.py with your app name, user names, phone numbers.
+Customize the text in home.py, and the various xml files.
+Test locally (using something like testlocal.bat, depending on how your Python and GAE SDK are configured)
+Push to google app engine (using something like upload.bat, depending)
+Sign up for a Twilio phone number, and pay for it.
+Point your phone number's phone URL to http://yourappname.appspot.com/app/answer
+Profit
