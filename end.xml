@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	{% if preface %}
+	<Say voice="woman">{{ preface }}</Say>
+	{% endif %}
+	<Say voice="woman">End of line.</Say>
+</Response>

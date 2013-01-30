@@ -1,0 +1,1 @@
+appcfg --oauth2 update .

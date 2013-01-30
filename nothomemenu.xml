@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	{% if preface %}
+	<Say voice="woman">{{ preface }}</Say>
+	{% endif %}
+	<Gather numDigits="1" timeout="8" action="{{ baseurl }}/app/nothomeresult" method="POST">
+		<Say voice="woman">I'm sorry, no one is answering the phone.</Say>
+		<Say voice="woman">Please press star to hang up, or if this is urgent, dial 1 for {{ name1 }}, dial 2 for {{ name2 }}</Say>
+		<Say voice="woman">or 3 for the Gibson super computer.</Say>
+	</Gather>
+	<Hangup/>
+</Response>

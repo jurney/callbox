@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	{% if preface %}
+	<Say voice="woman">{{ preface }}</Say>
+	{% endif %}
+	{% if action %}
+	<Dial timeout="15" action="{{ baseurl }}{{ action }}">{{ number }}</Dial>
+	{% else %}
+	<Dial>{{ number }}</Dial>
+	{% endif %}
+	<Say>End of line.</Say>
+	<Hangup/>
+</Response>

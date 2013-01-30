@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+	<Gather numDigits="1" {% if timeout %}timeout="{{ timeout }}"{% else %}timeout="4"{% endif %} action="{{ baseurl }}/app/main" method="POST">
+		{% if preface %}
+		<Say voice="woman">{{ preface }}</Say>
+		{% else %}
+		<Say voice="woman">Please wait while I connect you to the {{ family }}</Say>
+		{% endif %}
+	</Gather>
+	<Redirect>{{ baseurl }}/app/main</Redirect>
+</Response>
